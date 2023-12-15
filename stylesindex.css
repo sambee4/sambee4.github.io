@@ -1,0 +1,306 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+    background-image: url(seal-island-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #142f26;
+    border: 5px outset #e79c9f;
+    font-weight: lighter;
+    padding-bottom: 5%;
+
+}
+/*Header CSS*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    background-color: #142f26b5;
+    color: #e79c9f;
+    border: 8px outset #f6a192;
+    font-weight: lighter;
+}
+.name-text {
+    color: #f6a192;
+}
+.name-text h2 {
+    color: bisque;
+    font-weight: lighter;
+}
+.profile-photo {
+    border-radius: 50%;
+    border: 2px solid #333;
+    width: 150px;
+    height: 175px;
+    margin-bottom: 10px;
+}
+
+.linkedin {
+    text-align: center;
+}
+.links {
+    color: bisque;
+}
+/*Introduction container*/
+.intro {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+    font-size: large;
+    border-top:3px solid #e79c9f;
+    border-bottom:3px solid #e79c9f;
+    color:#e79c9f;
+    font-weight: lighter;
+    background-color: #885051bb;
+}
+
+.intro-box,
+.small-text {
+    width: 80%;
+    margin: 0 auto;
+    color: bisque;
+    font-weight: bolder;
+}
+.about-me-text {
+    color:#f6a192;
+
+}
+
+/*Accordion Menu Styles*/
+.button {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+}
+.accordion {
+    background-color: #e79c9ed5;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color:bisque;
+    cursor: pointer;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    border: 20px outset #e79c9ee5;
+    outline: none;
+    transition: 0.4s;
+    margin: 20px;
+    font-weight: lighter;
+  }
+
+.active, .accordion:hover {
+    background-color: #efb1b3d5;
+}
+
+.skills-panel {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 auto;
+    background-color: #022419c3;
+    color: #e79c9f;
+    border: 15px inset #e79c9ed5;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    width: 55%;
+    align-self: center;
+}
+.panel {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 auto;
+    background-color: #022419c3;
+    color: bisque;
+    border: 15px inset #e79c9ed5;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    width: 60%;
+    align-self: center;
+}
+
+.projects {
+    background-color: #022419c3;
+    padding: 20px;
+    display: flex;
+	flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #f6a192;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: bisque;
+}
+
+.link-text {
+    color:#e79c9f
+}
+.volunteer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:stretch;
+    overflow: hidden;
+    width:auto;
+    height: calc(33.33% - 10px);
+    margin: 0 auto;
+    color: #e79c9f;
+}
+
+.volunteer h2 {
+    text-align: center;
+}
+
+.volunteer-item {
+    padding: 0 auto;
+    width: calc(33.33% - 10px);
+
+    margin: 0;
+    background-color:#1e674f93;
+    border-top: 5px outset #e79c9f;
+}
+
+.volunteer-item img {
+    flex: 1;
+    max-width: 100%;
+    max-height: 80%;
+    padding-left: 5px;
+}
+/*Footer styles*/
+footer {
+    position: fixed;
+    bottom: 0;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    color: #ffffff;
+    padding-left: 2%;
+
+}
+/*Style for the credit to photographer on bottom right of website*/
+.content-use {
+    display: flex;
+    position: fixed;
+    font-size: small;
+    bottom: 0;
+    margin-left: 80%;
+    
+}
+/*Media query for screens larger than 847px*/
+@media (min-width: 847px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .intro-box,
+    .small-text {
+        width: 60%;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+}
+@media (min-width: 846px) {
+    /* ... (existing styles) ... */
+
+    .volunteer {
+        padding: 10px;
+    }
+
+    .volunteer-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Responsiveness for smaller screens*/
+@media (max-width:845px) {
+
+    .intro {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .accordion {
+        width: 90%;
+    }
+    .panel {
+        width: 90%;
+    }
+    .volunteer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+    .volunteer-item {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 95%;
+    }
+    .project {
+        margin: 0;
+        padding: 0;
+        width: 95%;
+    }
+    .skills-panel {
+        width: 85%;
+        padding: 3px;
+    }
+}
+/*Font size adjustments for smaller screens*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: medium;
+    }
+    h2 {
+        font-size: small;
+    }
+    h3 {
+        font-size: smaller;
+    }
+    h4 {
+        font-size: smaller;
+    }
+    p {
+        font-size: x-small;
+    }
+    .skills-panel {
+        font-size: x-small;
+    }
+}

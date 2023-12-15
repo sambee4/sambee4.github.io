@@ -3,131 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="projectspage" href="projects.html">
-    <link rel="projectstyles" href="projectstyles.css">
+    <link rel="stylesheet" href="stylesindex.css">
     <link rel="firstwebpage" href="firstwebpage.css">
     <link rel="hackathonform" href="hackstyles.css">
-
-    <title>Samantha Best</title>
+    
+    <title>Samantha Best - Portfolio</title>
 </head>
 <body>
-
-    <div class="nav-container">
-        <!-- <div class="image">
-            <a href="#"><img src="samprofile.jpg" alt="profile-photo"></a>
-            </div> -->
-        <div class="author-content">
-            <h4>Samantha Best</h4>
-            <span>Database Administration Student</span>
-        </div>
-        <nav class="main-nav" role="navigation">
-            <ul class="main-menu">
-                <!-- <li class="about-me-link"><a href="#section1">About Me</a></li>
-                <li class="skills-link"><a href="#section2">Skills</a></li> -->
-                <li class="projects-link"><a href="projects.html">Project Links</a></li>
-                <li class="first-web-link"><a href="firstwebpage.html">My First Webpage</a></li>
-                <!-- <li class="experience-link"><a href="#section4">Experience</a></li> -->
-                <li class="form-link"><a href="hackathonform.html">Hackathon Form</a></li>
-                <li class="cause-link"><a href="#section6">Cause</a></li>
-            </ul>
-        </nav>
-        <div class="social-network">
-            <ul class="social-icons">
-                <li>
-                    <a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <!-- <li>
-                    <a href="https://www.linkedin.com/in/samantha-nbest"><i class="fa fa-linkedin">LinkedIn</i></a>
-                </li> -->
-                <li>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-rss"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="copyright-text">
-            <p>Samantha Best - 2023</p>
-        </div>
+<!---Top Header On Page-->
+  <div class="header">
+    <img class="profile-photo" src="samprofile.jpg" alt="Profile Photo">
+    <div class="name-text">
+      <h1>Samantha Best</h1>
+      <h2>Nova Scotia Community College</h2>
+      <h3>Database Administration Student</h3>
     </div>
-    <section id="my-photo"><div class="image">
-        <a href="#"><img src="cape-smokey-copy1.jpg" alt="profile-photo"></a>
-        </div></section>
-    <section class="content">
-        <button class="accordion"><h2>About Me</h2></button>
+    <div class="linkedin">
+      <p>Linkedin:</p>
+      <a class="links"href="https://www.linkedin.com/in/samantha-nbest" target="_blank">Visit My LinkedIn</a>
+      <p>GitHub:</p>
+      <a class="links"href="https://github.com/sambee4" target="_blank">GitHub Home</a>
+    </div>
+  </div>
+<!---Introduction Paragraph under Header-->
+  <div class="intro">
+    <div class="intro-box">
+      <h2 class="about-me-text">About Me</h2>
+      <p>Hey! My name's Sam. Thanks for visiting my page!<br></p>
+    </div>
+    <div class="small-text">
+      <p>I'm a first year student at Nova Scotia Community College with an interest in the intricate world of data.<br><br>
+        Beyond my academic experience, my passion extends to ocean conservation and environmental sustainability.
+        Proficient in Python, I've learned to utilize its capabilities for data analysis and interpretation.<br> Check out my latest project on my Projects Page!</p>
+    </div>
+  </div>
+<!---Drop Down Menu Buttons for Contents--->
+  <div class="button">
+  <button class="accordion"><h2>Skills and Experience</h2></button>
+  <div class="skills-panel">
+    <h3>Skills</h3>
+      <p>Oracle Live SQL, Python, HTML/CSS, Windows System and Domain Administration, Network Troubleshooting, Communication, Project Management<br><br>
+        <h3>Experience</h3><br>Deputy Project Manager (NSCC) - IT Job Fair 2024<br>
+        Diploma - IT Database Administration Student (NSCC) - Class of 2025<br>
+        Residential Counselor (2019-Present)<br>
+        Diploma - Disability Supports and Services (NSCC) - Class of 2019<br>
+        NSCC Volunteer - Get Started Event, Welcome Back, Open House (2018 & 2023)<br>
+        NSCC Pilot Project - Summer Employment Co-Ordinator (2018)<br>
+        NSCC Health and Dental Representative (2018)</p>
+          </div>
+        </div>
+
+  <div class="button">
+    <button class="accordion"><h2>Sample Projects</h2></button>
+  <div class="panel">
+    <div class="projects">
+
+    <div class="project">
+      <h3>Tsunami and Earthquake Dataset</h3>
+      <p>We were given creative freedom to design a program that searches a CSV file to filter data based on the users requested input. The GitHub link to my program is attached below.</p>
+      <a class="link-text"href="https://github.com/sambee4/tsunami_dataset" target="_blank">Visit Repository</a>
+    </div>
+
+    <div class="project">
+      <h3>Hackathon Form</h3>
+      <p>A simple form created in my Web Development class mid-semester.</p>
+      <a class="link-text"href="hackathonform.html">View Form</a>
+    </div>
+    <div class="project">
+      <h3>My First Webpage - About Me</h3>
+      <p>Created my first HTML webpage, displaying some facts and information about my background and interests.</p>
+      <a class="link-text"href="firstwebpage.html">My First Webpage</a>
+                </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="button">
+  <button class="accordion"><h2>NSCC Experiences</h2></button>
+      <div class="panel">
+        <div class="volunteer">
+          <div class="volunteer-item">
+            <h3>NSCC IT Job Fair 2024</h3>
+            <p>Current Deputy Project Manager for the 10th Annual NSCC IT Job Fair</p>
+            <img src="nsccjobfair.jpg" alt="job fair photo 2023">
+          </div>
+          <div class="volunteer-item">
+            <h3>NSCC Get Started Event</h3>
+            <p>Welcomed new and returning students to Marconi Campus!</p>
+            <img src="nsccwelcome1.jpg" alt="get started event">
+          </div>
+          <div class="volunteer-item">
+            <h3>Graduation 2019</h3>
+            <p>Celebrating with my family after obtaining my Diploma in 2019</p>
+            <img src="graduationcropped.jpg" alt="graduation2019">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button">
+      <button class="accordion"><h2>Cause: Marine Protection in Nova Scotia</h2></button>
         <div class="panel">
-            <p class ="portfolio">
-                Hey! My name's Sam. Thanks for visiting my page!<br>I'm a first year student at Nova Scotia Community College
-                 with an interest in the intricate world of data.<br>
-                Beyond my academic experience, my passion extends to ocean conservation and environmental sustainability.<br>
-                Proficient in Python, I've learned to utilize its capabilities for data analysis and interpretation. Check out my latest project on my Projects Page!<br><br>
-                My expertise in SQL positions me as a meticulous architect for the construction of organized and efficient databases. <br>
-                Additionally, I have acquired skills in HTML, 
-                creating user-friendly interfaces to disseminate valuable oceanic information. 
-                With a keen eye for system administration, I ensure the seamless functioning and security of data systems. As I continue on my 
-                academic journey, I'm excited about continuing to deepen my understanding of the environment, 
-                with a focus on the marine ecosystems in Nova Scotia. My technical abilities and environmental 
-                passion propels my commitment to contribute meaningfully to the convergence of data science and ocean conservation.</p>
+          <div class="cause">
+            <h3>Marine Protection and Planning</h3>
+            <h4>Ecology Action Centre</h4>
+            <p>
+            Protecting marine life in Nova Scotia is a cause that matters for all of us.<br>
+            Nova Scotia is my home and always will be, and that's why I care about sustaining our ocean environment. We're surrounded by it!<br>
+            The coastal waters here are home to a diverse range of marine species, and keeping them safe ensures a thriving environment for everyone. 
+            It's not just about the species, this supports our communities that rely on healthy waters for our economic development.
+            Healthy oceans help fight climate change by absorbing carbon and regulating the climate.
+            Supporting marine life protection in Nova Scotia isn't just a local interest; it's a global responsibility. <br>
+            It's about preserving our oceans, our communities, and a natural legacy for future generations to thrive.<br>
+            Research and regulations are imperative to improving and sustaining marine livelihood.</p>
+            <a class="link-text" href="https://ecologyaction.ca/our-work/marine/marine-protection-planning"><p>Read More Here</p></a>
+          </div>
         </div>
-        <button class="accordion"><h2>Skills</h2></button>
-            <!-- Skills content goes here -->
-            <div class="panel">
-            <p>Oracle Live SQL, Python, HTML/CSS, Windows System and Domain Administration, Network Troubleshooting, Communication, Project Management</p>
-        </div>
-        </div>
-        
-        <!-- <div class="content-container projects">
-             Projects content goes here
-            <h2>Projects</h2>
-            <p>Content about projects...</p>
-        </div> -->
-        <button class="accordion"><h2>Work and Volunteer Experience</h2></button>
-            <!-- Education content goes here -->
-            <div class="panel">
-            <p> Deputy Project Manager (NSCC) - IT Job Fair 2024<br>
-                Diploma - IT Database Administration Student (NSCC) - Class of 2025<br>
-                Residential Counselor (2019-Present)<br>
-                Diploma - Disability Supports and Services (NSCC) - Class of 2019<br>
-                NSCC Volunteer - Get Started Event, Welcome Back, Open House (2018 & 2023)<br>
-                NSCC Pilot Project - Summer Employment Co-Ordinator (2018)<br>
-                NSCC Health and Dental Representative (2018)</p></div>
-        </div>
-        <button class="accordion"><h2>beCAUSE I'm Passionate</h2></button>
-            <div class="panel">
-                <p>Something something something</p>
-            </div>
-            <!-- Contact content goes here -->
-        <button class="accordion"><h2>Contact</h2></button>
-            <div class="panel"><a href="https://www.linkedin.com/in/samantha-nbest"><i class="fa fa-linkedin">LinkedIn</i></a></div>
-        <div>
-            <footer>
-                &copy; Samantha Best | 2023
-            </footer>
-    </section>
-    <div class="content-use"><p>Background image: Credit to Christophe Schindler at Pixabay</p></div>
-    <!-- <div class="content-use"><p>Background image: Free from https://pixabay.com/photos/seal-island-bridge-cape-breton-2188335/</p></div> -->
-    </div>
+<!---Credit to Photographer for use of Image for Background (Website is coypright free images)-->
+    <div class="content-use"><p>Background image: Seal Island Bridge, Cape Breton, NS. Credit to Christophe Schindler at Pixabay(Non-Copyright)</p></div>
 
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
+<!---Copyright name and date of website creation-->
+    <footer>
+      &copy; Samantha Best | 2023
+  </footer>
+<!---Script for Drop Down Accordion Menu--->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
         }
-        </script>
+      });
+    }
+    </script>
 </body>
 </html>
